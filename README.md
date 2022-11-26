@@ -1,6 +1,4 @@
-# Upcloudify
-
-<br/>
+# Upcloudify v1.0.0
 
 <h3>What is upcloudify?</h3>
 <p>upcloudify is a javascript package that allows you to easily upload files to your cloud. </p>
