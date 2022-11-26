@@ -19,7 +19,10 @@
 </pre>
 
 <h3>Author</h3>
-<p>Kolya Nikolai Madridano</p>
+<a href="https://www.facebook.com/kloya.kamisato">
+    Kolya Nikolai Madridano
+</a>
+
 
 <h3 align="left">Support</h3>
 <a href="https://www.buymeacoffee.com/koalaa">
