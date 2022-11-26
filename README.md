@@ -24,9 +24,15 @@
 <h3 align="left">Support</h3>
 <p>
     <a href="https://www.buymeacoffee.com/koalaa">
-    <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="koalaa" /></a>
+        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="buy-me-a-coffee" />
+    </a>
+
+    <a href="https://ko-fi.com/kolyamadridano">
+        <img src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4cf61eceb26012821_SupportMe_red.png" height="50" width="210" alt="ko-fi" />
+    </a>
+
+    <a href="https://paypal.me/koolamadridano">
+        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png" height="50" width="210" alt="paypal" />
+    </a>
 </p>
 
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/koolamadridano)
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/kolyamadridano)
