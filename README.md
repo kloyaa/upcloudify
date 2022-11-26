@@ -23,10 +23,7 @@
 <h3>Usage</h3>
 <p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
-<a href="https://cloudinary.com" target="blank">
-    <h4>Cloudinary</h4>
-</a>
-<p>Create an account in cloudinary and get your own credentials</p>
+<p>Create an account in [cloudinary](https://cloudinary.com) and get your own credentials</p>
 
 ```jsx
     const cloudinary = new Cloudinary(
