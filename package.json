@@ -1,6 +1,6 @@
 {
   "name": "@koalaranger/upcloudify",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "A tool that allows you to easily upload files to your cloud. It has a number of capabilities that are challenging to master through documentation alone.",
   "main": "index.js",
   "scripts": {
