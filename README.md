@@ -21,15 +21,17 @@
 </pre>
 
 <h3>Cloudinary usage</h3>
-Create an account in [cloudinary](https://cloudinary.com) and get your own credentials
 
 ```jsx
+    // Create an account in https://cloudinary.com and get your own credentials
+
     const cloudinary = new Cloudinary(
         CLOUDINARY_NAME,
         CLOUDINARY_KEY,
         CLOUDINARY_SECRET,
         CLOUDINARY_FOLDER
     );
+
     const result = await cloudinary.image(files);
 ```
 <p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
