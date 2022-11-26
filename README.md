@@ -9,8 +9,7 @@
 ✔️ Use anywhere with your javascript projects <br />
 
 <h3>Supports</h3>
-✔️ [I'm an inline-style link](https://www.google.com)
-✔️ [Cloudinary](https://cloudinary.com) <br />
+✔️ <a href="https://cloudinary.com" target="blank">Cloudinary</a><br />
 ✔️ Amazon S3 (In progress) <br />
 
 <h3>Installation</h3>
