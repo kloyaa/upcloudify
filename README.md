@@ -23,7 +23,7 @@
 <h3>Usage</h3>
 <p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
-<p>Create an account in [cloudinary](https://cloudinary.com) and get your own credentials</p>
+Create an account in [cloudinary](https://cloudinary.com) and get your own credentials
 
 ```jsx
     const cloudinary = new Cloudinary(
