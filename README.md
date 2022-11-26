@@ -1,5 +1,7 @@
 # Upcloudify v1.0.0
 
+[![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
+
 <h3>What is upcloudify?</h3>
 <p>upcloudify is a javascript package that allows you to easily upload files to your cloud. </p>
 ✔️ Upload your files with short block of codes <br />
