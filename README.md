@@ -16,7 +16,9 @@
 <p>Open your desired command line tool and run these commands</p>
 <code>
     $ mkdir project_name
+
     $ cd project_name
+
     $ npm i @koalaranger/upcloudify
 </code>
 
