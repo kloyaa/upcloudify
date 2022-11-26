@@ -23,7 +23,10 @@
 <h3>Cloudinary usage</h3>
 
 ```jsx
-    // Create an account in https://cloudinary.com and get your own credentials
+    /*
+        Create an account in https://cloudinary.com and get your own credentials
+        note: files is an array of File that can contain one or more
+    */
 
     const cloudinary = new Cloudinary(
         CLOUDINARY_NAME,
@@ -34,7 +37,7 @@
 
     const result = await cloudinary.image(files);
 ```
-<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
+<p>IMPORTANT NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
