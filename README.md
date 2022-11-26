@@ -1,4 +1,4 @@
-# Upcloudify v1.0.0
+# Upcloudify v1.2.1
 
 [![NPM Version][npm-image]][npm-url]
 
