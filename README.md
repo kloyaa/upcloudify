@@ -20,3 +20,9 @@
 
 <h3>Author</h3>
 <p>Kolya Nikolai Madridano</p>
+
+<h3 align="left">Support:</h3>
+<p>
+    <a href="https://www.buymeacoffee.com/koalaa">
+    <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="koalaa" /></a>
+</p>
