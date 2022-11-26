@@ -14,13 +14,11 @@
 
 <h3>Installation</h3>
 <p>Open your desired command line tool and run these commands</p>
-<code>
+<pre>
     $ mkdir project_name
-
     $ cd project_name
-
     $ npm i @koalaranger/upcloudify
-</code>
+</pre>
 
 <h3>Author</h3>
 <p>Kolya Nikolai Madridano</p>
