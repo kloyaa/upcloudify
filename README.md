@@ -7,7 +7,14 @@
     <li>Amazon S3 (In progress)</li>
 </ul>
 
-<br/>
+<h3>Installation</h3>
+<p>Open your desired command line tool and run these commands</p>
+<ul>
+    <li>$ mkdir project_name</li>
+    <li>$ cd project_name</li>
+    <li>$ npm i @koalaranger/upcloudify</li>
+</ul>
+
 
 <h3>Author</h3>
 <p>Kolya Madridano</p>

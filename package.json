@@ -1,0 +1,19 @@
+{
+  "name": "@koalaranger/upcloudify",
+  "version": "1.0.0",
+  "description": "A tool that allows you to easily upload files to your cloud.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kloyaa/upcloudify.git"
+  },
+  "author": "Kolya Madridano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kloyaa/upcloudify/issues"
+  },
+  "homepage": "https://github.com/kloyaa/upcloudify#readme"
+}
