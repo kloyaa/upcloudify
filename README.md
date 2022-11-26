@@ -1,6 +1,6 @@
 # Upcloudify v1.0.0
 
-[![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
+[![NPM Version][npm-image]][npm-url]
 
 <h3>What is upcloudify?</h3>
 <p>upcloudify is a javascript package that allows you to easily upload files to your cloud. </p>
@@ -39,3 +39,6 @@
     <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png" height="50"  alt="paypal" />
 </a>
 
+
+[npm-image]: https://img.shields.io/npm/v/serve-favicon.svg
+[npm-url]: https://www.npmjs.com/package/@koalaranger/upcloudify
