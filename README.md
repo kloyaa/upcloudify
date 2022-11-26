@@ -21,8 +21,10 @@
 </pre>
 
 <h3>Usage</h3>
-<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
+<br/>
+
+<h3>Cloudinary</h3>
 Create an account in [cloudinary](https://cloudinary.com) and get your own credentials
 
 ```jsx
@@ -34,6 +36,7 @@ Create an account in [cloudinary](https://cloudinary.com) and get your own crede
     );
     const result = await cloudinary.image(files);
 ```
+<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
