@@ -21,21 +21,21 @@
 </pre>
 
 <h3>Usage</h3>
-<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if avaiable</p>
+<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
-<a href="https://cloudinary.com" target="blank">Cloudinary</a>
+<a href="https://cloudinary.com" target="blank">
+    <h4>Cloudinary</h4>
+</a>
 <p>Create an account in cloudinary and get your own credentials</p>
-<pre>
-    const cloudinary = new Cloudinary(
-        process.env.CLOUDINARY_NAME,
-        process.env.CLOUDINARY_KEY,
-        process.env.CLOUDINARY_SECRET,
-        process.env.CLOUDINARY_FOLDER
-    );
-
-    const result = await cloudinary.image(req.files)
-</pre>
-
+```javascript
+const cloudinary = new Cloudinary(
+    CLOUDINARY_NAME,
+    CLOUDINARY_KEY,
+    CLOUDINARY_SECRET,
+    CLOUDINARY_FOLDER
+);
+const result = await cloudinary.image(files);
+```
 
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
