@@ -1,6 +1,6 @@
 import { UploadType } from "../enum";
 
-export function upload(type: UploadType) {
+export function cloudinary(type: UploadType) {
     if(type === UploadType.SingleImage) {
         return {
             message: 'type === UploadType.SingleImage',
