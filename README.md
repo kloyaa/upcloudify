@@ -22,6 +22,7 @@
 
 <h3>Cloudinary usage</h3>
 Create an account in [cloudinary](https://cloudinary.com) and get your own credentials
+
 <br/><br/>
 
 ```jsx
