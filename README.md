@@ -22,17 +22,15 @@
 <p>Kolya Nikolai Madridano</p>
 
 <h3 align="left">Support</h3>
-<p>
-    <a href="https://www.buymeacoffee.com/koalaa">
-        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="buy-me-a-coffee" />
-    </a>
+<a href="https://www.buymeacoffee.com/koalaa">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="buy-me-a-coffee" />
+</a>
 
-    <a href="https://ko-fi.com/kolyamadridano">
-        <img src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4cf61eceb26012821_SupportMe_red.png" height="50" width="210" alt="ko-fi" />
-    </a>
+<a href="https://ko-fi.com/kolyamadridano">
+    <img src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4cf61eceb26012821_SupportMe_red.png" height="50" width="210" alt="ko-fi" />
+</a>
 
-    <a href="https://paypal.me/koolamadridano">
-        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png" height="50" width="210" alt="paypal" />
-    </a>
-</p>
+<a href="https://paypal.me/koolamadridano">
+    <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png" height="50" width="210" alt="paypal" />
+</a>
 
