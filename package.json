@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kloyaa/upcloudify/issues"
   },
-  "homepage": "https://github.com/kloyaa/upcloudify#readme"
+  "homepage": "https://github.com/kloyaa/upcloudify#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
 }
