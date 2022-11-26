@@ -27,14 +27,15 @@
     <h4>Cloudinary</h4>
 </a>
 <p>Create an account in cloudinary and get your own credentials</p>
-```javascript
-const cloudinary = new Cloudinary(
-    CLOUDINARY_NAME,
-    CLOUDINARY_KEY,
-    CLOUDINARY_SECRET,
-    CLOUDINARY_FOLDER
-);
-const result = await cloudinary.image(files);
+
+```jsx
+    const cloudinary = new Cloudinary(
+        CLOUDINARY_NAME,
+        CLOUDINARY_KEY,
+        CLOUDINARY_SECRET,
+        CLOUDINARY_FOLDER
+    );
+    const result = await cloudinary.image(files);
 ```
 
 <h3>Author</h3>
