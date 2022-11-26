@@ -20,7 +20,7 @@
 
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
-    Kolya Nikolai Madridano
+    🧑 Kolya Nikolai Madridano
 </a>
 
 
