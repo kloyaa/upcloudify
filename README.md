@@ -9,7 +9,7 @@
 ✔️ Use anywhere with your javascript projects <br />
 
 <h3>Supports</h3>
-✔️ Cloudinary <br />
+✔️ [Cloudinary](https://cloudinary.com) <br />
 ✔️ Amazon S3 (In progress) <br />
 
 <h3>Installation</h3>
