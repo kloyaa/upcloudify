@@ -1,3 +1,3 @@
 module.exports = {
-    Cloudinary:  require("./src/uploader/cloudinary")
+    CloudinaryUpload: require("./src/uploader/cloudinary")
 }
