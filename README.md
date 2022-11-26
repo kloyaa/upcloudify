@@ -20,12 +20,8 @@
     $ npm i @koalaranger/upcloudify
 </pre>
 
-<h3>Usage</h3>
-
-<br/>
-
-<h3>Cloudinary</h3>
-Create an account in [cloudinary](https://cloudinary.com) and get your own credentials
+<h3>Cloudinary usage</h3>
+Create an account in [cloudinary](https://cloudinary.com) and get your own credentials <br/>
 
 ```jsx
     const cloudinary = new Cloudinary(
