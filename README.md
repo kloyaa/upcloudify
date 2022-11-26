@@ -20,6 +20,23 @@
     $ npm i @koalaranger/upcloudify
 </pre>
 
+<h3>Usage</h3>
+<p>NOTE: Secrets should be stored in enviroment variables or use secret managers if avaiable</p>
+
+<a href="https://cloudinary.com" target="blank">Cloudinary</a>
+<p>Create an account in cloudinary and get your own credentials</p>
+<pre>
+    const cloudinary = new Cloudinary(
+        process.env.CLOUDINARY_NAME,
+        process.env.CLOUDINARY_KEY,
+        process.env.CLOUDINARY_SECRET,
+        process.env.CLOUDINARY_FOLDER
+    );
+
+    const result = await cloudinary.image(req.files)
+</pre>
+
+
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
     Kolya Nikolai Madridano
