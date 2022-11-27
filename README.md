@@ -1,4 +1,4 @@
-# Upcloudify v1.2.1 (Development)
+# Upcloudify v1.2.7 (Development)
 
 [![NPM Version][npm-image]][npm-url]
 
