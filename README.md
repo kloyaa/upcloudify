@@ -33,10 +33,11 @@
         CLOUDINARY_NAME,
         CLOUDINARY_KEY,
         CLOUDINARY_SECRET,
-        CLOUDINARY_FOLDER
+        CLOUDINARY_FOLDER,
+        IS_UNIQUE_FILENAME
     );
 
-    const result = await upcloudify.uploadFile(files);
+    const result = await upcloudify.uploadImage(files);
 ```
 <p>IMPORTANT NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
