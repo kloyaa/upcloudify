@@ -20,6 +20,14 @@
     $ npm i @koalaranger/upcloudify
 </pre>
 
+<h3>Supported file types for images</h3>
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+
 <h3>Cloudinary usage</h3>
 
 ```jsx
