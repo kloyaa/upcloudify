@@ -52,7 +52,7 @@ Image Type | Extension | MIME Type
         note: files is an array of File that can contain one or more File
     */
 
-    // Uploading a file | images
+    // Config
     const upcloudify = new Cloudinary(
         CLOUDINARY_NAME,
         CLOUDINARY_KEY,
@@ -61,7 +61,11 @@ Image Type | Extension | MIME Type
         IS_UNIQUE_FILENAME
     );
 
+    // Uploading images
     const result = await upcloudify.uploadImage(files);
+
+    // Uploading videos
+    const result = await upcloudify.uploadVideo(files);
 ```
 <p>IMPORTANT NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
