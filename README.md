@@ -46,6 +46,8 @@ Image Type | Extension | MIME Type
 
 <h3>Cloudinary usage</h3>
 
+![cloudinary credentials](https://res.cloudinary.com/diigkcc6g/image/upload/v1669528054/tempsnip_ijvb9w.png)
+
 ```jsx
     /*
         Create an account in https://cloudinary.com and get your own credentials
