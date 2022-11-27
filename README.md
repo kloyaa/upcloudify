@@ -20,13 +20,18 @@
     $ npm i @koalaranger/upcloudify
 </pre>
 
-<h3>Supported file types for images</h3>
+<h3>Supported video types</h3>
 
-Markdown | Less | Pretty
+Video Type | Extension | MIME Type
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
+*Flash* | *.flv* | **video/x-flv**
+*MPEG-4* | *.mp4* | **video/mp4**
+*iPhone Index* | *.m3u8* | **video/x-mpegURL**
+*iPhone Segment* | *.ts* | **video/MP2T**
+*3GP Mobile* | *.3gp* | **video/3gpp**
+*QuickTime* | *.mov* | **video/quicktime**
+*A/V Interleave* | *.avi* | **video/x-msvideo**
+*Windows Media* | *.wmv* | **video/x-ms-wmv**
 
 <h3>Cloudinary usage</h3>
 
