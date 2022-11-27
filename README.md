@@ -49,7 +49,7 @@ Image Type | Extension | MIME Type
 
 <h1>Cloudinary</h1>
 
-[create cloudinary account](https://cloudinary.com)
+[Cloudinary homepage](https://cloudinary.com)
 
 <h3>Cloudinary secrets</h3>
 
