@@ -33,6 +33,17 @@ Video Type | Extension | MIME Type
 *A/V Interleave* | *.avi* | **video/x-msvideo**
 *Windows Media* | *.wmv* | **video/x-ms-wmv**
 
+<h3>Supported image types</h3>
+
+Image Type | Extension | MIME Type
+--- | --- | ---
+*PNG* | *.png* | **image/png**
+*JPG* | *.jpg* | **image/jpg**
+*JPEG* | *.jpeg* | **image/jpeg**
+*SVG* | *.svg* | **image/svg+xml**
+*WEBP* | *.webp* | **image/webp**
+*AVIF* | *.avif* | **image/avif**
+
 <h3>Cloudinary usage</h3>
 
 ```jsx
