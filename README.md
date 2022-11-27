@@ -44,7 +44,12 @@ Image Type | Extension | MIME Type
 *WEBP* | *.webp* | **image/webp**
 *AVIF* | *.avif* | **image/avif**
 
+<br/>
+<br/>
+
 <h1>Cloudinary</h1>
+
+[create cloudinary account](https://cloudinary.com)
 
 <br/>
 
@@ -55,12 +60,7 @@ Image Type | Extension | MIME Type
 <h3>Cloudinary upload usage</h3>
 
 ```jsx
-    /*
-        Create an account in https://cloudinary.com and get your own credentials
-        note: files is an array of File that can contain one or more File
-    */
-
-    // Config
+    // Configuration
     const upcloudify = new Cloudinary(
         CLOUDINARY_NAME,
         CLOUDINARY_KEY,
