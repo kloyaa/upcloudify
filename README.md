@@ -49,6 +49,7 @@ Image Type | Extension | MIME Type
 <br/>
 
 <h3>Cloudinary secrets</h3>
+
 ![cloudinary credentials](https://res.cloudinary.com/diigkcc6g/image/upload/v1669528054/tempsnip_ijvb9w.png)
 
 <h3>Cloudinary upload usage</h3>
