@@ -82,7 +82,7 @@ Image Type | Extension | MIME Type
 
 Key | Type | Usage | Default
 --- | --- | --- | ---
-*files * | *required File[]* | *files you want to upload to the cloud* | undefined
+*files* | *required File[]* | *files you want to upload to the cloud* | `undefined`
 *isUniqueFilename* | *boolean* | *The uploaded file will have a unique name if set to true.* | `true`
 
 
