@@ -51,8 +51,6 @@ Image Type | Extension | MIME Type
 
 [create cloudinary account](https://cloudinary.com)
 
-<br/>
-
 <h3>Cloudinary secrets</h3>
 
 ![cloudinary credentials](https://res.cloudinary.com/diigkcc6g/image/upload/v1669528054/tempsnip_ijvb9w.png)
