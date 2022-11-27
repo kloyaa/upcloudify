@@ -2,6 +2,9 @@ const imageTypes = [
     "image/png",
     "image/jpg",
     "image/jpeg",
+    "image/svg+xml",
+    "image/webp",
+    "image/avif"
 ]
 const videoTypes = [
     "video/x-flv",
