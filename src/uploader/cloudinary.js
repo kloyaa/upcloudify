@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { imageTypes, videoTypes } = require("../const/mimeTypes.const");
 const cloudinary = require("cloudinary").v2;
 
 class CloudinaryUpload {
@@ -32,22 +33,26 @@ class CloudinaryUpload {
         });
     }
 
-    async uploadFile (files) {
+    async uploadImage (files) {
         try {
             if (files.length > 1) {
                 const uploads = [];
                 for (const file of files) {
-                    const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
-                    uploads.push(response);
+                    if(imageTypes.includes(file.mimetype)) {
+                        const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
+                        uploads.push(response);
+                    }
                     fs.unlinkSync(file.path);
                 }
                 return uploads;
             }
             else {
                 for (const file of files) {
-                    const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
-                    fs.unlinkSync(file.path);
-                    return response;
+                    if(imageTypes.includes(file.mimetype)) {
+                        const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
+                        fs.unlinkSync(file.path);
+                        return response;
+                    }
                 }
             }
           } catch (error) {
@@ -57,7 +62,8 @@ class CloudinaryUpload {
 
     async uploadVideo (files) {
         try {
-            return await cloudinary.uploader.upload(files[0].path, this.cloud_options_video);
+            if(videoTypes.includes(files[0].mimetype))
+                return await cloudinary.uploader.upload(files[0].path, this.cloud_options_video);
           } catch (error) {
             console.log(error)
           }
