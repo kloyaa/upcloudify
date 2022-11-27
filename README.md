@@ -1,4 +1,4 @@
-# Upcloudify v1.2.1
+# Upcloudify v1.2.1 (Development)
 
 [![NPM Version][npm-image]][npm-url]
 
@@ -25,17 +25,18 @@
 ```jsx
     /*
         Create an account in https://cloudinary.com and get your own credentials
-        note: files is an array of File that can contain one or more
+        note: files is an array of File that can contain one or more File
     */
 
-    const cloudinary = new Cloudinary(
+    // Uploading a file | images
+    const upcloudify = new Cloudinary(
         CLOUDINARY_NAME,
         CLOUDINARY_KEY,
         CLOUDINARY_SECRET,
         CLOUDINARY_FOLDER
     );
 
-    const result = await cloudinary.image(files);
+    const result = await upcloudify.uploadFile(files);
 ```
 <p>IMPORTANT NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
 
