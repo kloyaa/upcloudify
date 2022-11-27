@@ -1,6 +1,6 @@
 {
   "name": "@koalaranger/upcloudify",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "A tool that allows you to easily upload files to your cloud. It has a number of capabilities that are challenging to master through documentation alone.",
   "keywords": [
     "cloudinary-api",
