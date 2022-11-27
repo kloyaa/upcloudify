@@ -1,7 +1,14 @@
 {
   "name": "@koalaranger/upcloudify",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "A tool that allows you to easily upload files to your cloud. It has a number of capabilities that are challenging to master through documentation alone.",
+  "keywords": [
+    "cloudinary-api",
+    "cloudinary",
+    "file-upload",
+    "image-upload",
+    "video-upload"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
