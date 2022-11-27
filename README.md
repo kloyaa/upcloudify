@@ -64,7 +64,7 @@ Image Type | Extension | MIME Type
         CLOUDINARY_KEY,
         CLOUDINARY_SECRET,
         CLOUDINARY_FOLDER,
-        IS_UNIQUE_FILENAME
+        isUniqueFilename
     );
 
     // Uploading images
@@ -74,6 +74,17 @@ Image Type | Extension | MIME Type
     const result = await upcloudify.uploadVideo(files);
 ```
 <p>IMPORTANT NOTE: Secrets should be stored in enviroment variables or use secret managers if available</p>
+
+<br/>
+<br/>
+
+<h3>API</h3>
+
+Key | Type | Usage | Default
+--- | --- | ---
+*files * | *required File[]* | *files you want to upload to the cloud* | undefined
+*isUniqueFilename* | *boolean* | *The uploaded file will have a unique name if set to true.* | `true`
+
 
 <h3>Author</h3>
 <a href="https://www.facebook.com/kloya.kamisato">
