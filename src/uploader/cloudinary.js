@@ -1,9 +1,10 @@
 const fs = require("fs");
-const { imageTypes, videoTypes } = require("../const/mimeTypes.const");
 const cloudinary = require("cloudinary").v2;
+const { imageTypes, videoTypes } = require("../const/mimeTypes.const");
 
 class CloudinaryUpload {
-    constructor(cloud_name, api_key, api_secret, cloud_folder = "Upcloudify", isUniqueFilename = true) {
+    constructor(props) {
+        const { cloud_name, api_key, api_secret, cloud_folder = "Upcloudify", isUniqueFilename = true } = props;
         this.cloud_name = cloud_name;
         this.api_key = api_key;
         this.api_secret = api_secret;
@@ -56,7 +57,7 @@ class CloudinaryUpload {
                 }
             }
           } catch (error) {
-            console.log(error)
+            throw error;
         }
     }
 
