@@ -77,6 +77,182 @@ Image Type | Extension | MIME Type
 
 <br/>
 
+<h3>OPTIONS</h3>
+
+<br/>
+
+<h3>filters</h3>
+
+![cloudinary options](https://res.cloudinary.com/diigkcc6g/image/upload/v1669629291/filters_q8ifgc.png)
+
+```jsx
+    // Usage
+    const options = [
+        {   effect: "art:red_rock"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options cartoonify](https://res.cloudinary.com/diigkcc6g/image/upload/c_scale,h_664,w_834/v1669629785/cartonify_vm2ti7.png)
+
+```jsx
+    // Usage
+    const options = [
+        {   effect: "cartoonify"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options opacity](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,h_664,w_834/v1669629966/opacity_idcqhm.png)
+
+```jsx
+    // Usage
+    const options = [
+        // 0 to 100
+        {   opacity: 30   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options pixelate](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,h_664,w_834/v1669630132/pixelate_wbdda7.png)
+
+```jsx
+    // Usage
+    const options = [
+        // 0 to 100
+        {   effect: "pixelate:20"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options gradient](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,g_auto,h_664,w_834/v1669630281/gradient_fade_leljbr.png)
+
+```jsx
+    // Usage
+    const options = [
+        {   background: "auto:predominant", height: 300, width: 300, crop: "pad"   },
+        {   effect: "gradient_fade:symmetric_pad", x: "0.5"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options border](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_664,w_834/v1669630445/border_ejv3dj.png)
+
+```jsx
+    // Usage
+    const options = [
+        {   border: "5px_solid_red"   }
+
+        /*  You can also add a multi-colored outline by creating
+            successive outline effect components.For example:  */
+
+        {   color: "red", effect: "outline:20:200"   },
+        {   color: "orange", effect: "outline:15:200"   },
+        {   color: "yellow", effect: "outline:10:200"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options replace color](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_664,w_834/v1669630924/replace_color_vvapmx.png)
+
+```jsx
+    // Usage
+    const options = [
+        /*  For example, without specifying a color to change,
+            the most prominent color is changed to the specified    */
+        {   effect: "replace_color:maroon"   }
+
+        /*   Specifying blue as the color to replace (to a tolerance of 80 from the color #2b38aa)
+        replaces the blue sides with parallel shades of maroon,
+        taking into account shadows, lighting, etc:   */
+        {   effect: "replace_color:maroon:10"   }
+
+        /*   Specifying blue as the color to replace (to a tolerance of 80 from the color #2b38aa)
+             replaces the blue sides with parallel shades of maroon,
+             taking into account shadows, lighting, etc:   */
+        {   effect: "replace_color:maroon:80:2b38aa"   }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_664,w_834/v1669631205/rouding_value_tfaxbt.png)
+
+```jsx
+    /*
+        Manually setting rounding values
+        To manually control the rounding, use the radius parameter with between 1 and 4 values defining the rounding amount (in pixels, separated by colons), following the same concept as the border-radius CSS property. When specifying multiple values, keep a corner untouched by specifying '0'.
+
+        One value: Symmetrical. All four corners are rounded equally according to the specified value.
+        Two values: Opposites are symmetrical. The first value applies to the top-left and bottom-right corners. The second value applies to the top-right and bottom-left corners.
+        Three values: One set of corners is symmetrical. The first value applies to the top-left. The second value applies to the top-right and bottom-left corners. The third value applies to the bottom-right.
+        Four values: The rounding for each corner is specified separately, in clockwise order, starting with the top-
+    */
+
+    // Usage
+    const options = [
+        {   height: 100, width: 150, crop: "fill"   },
+        {   radius: "25:0"  }
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_664,w_834/v1669631445/avatar_ttpj7l.png)
+
+```jsx
+    // Usage
+    const options = [
+        {   gravity: "face", height: 200, width: 200, crop: "thumb" },
+        {   radius: "max"   },
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+<br/>
+
+<h1>Vectorize</h1>
+<p>The vectorize effect (e_vectorize in URLs) can be used to convert a raster image to a vector format such as SVG. This can be useful for a variety of use-cases, such as:</p>
+<ul>
+    <li>Converting a logo graphic in PNG format to an SVG, allowing the graphic to scale as required.</li>
+    <li>Creating a low quality image placeholder that resembles the original image but with a reduced number of colors and lower file-size.</li>
+    <li>Vectorizing as an artistic effect. </li>
+</ul>
+
+<p>
+    Vectorizing as an artistic effect
+    Vectorizing is a great way to capture the main shapes and objects composing a photo or drawing and also produces a nice effect. When using the vectorize effect for an artistic transformation, you can deliver the vectorized images in any format, simply by specifying the relevant extension.
+    For example, the image of a fruit stand below has been vectorized to create a nice artistic effect and subsequently delivered as an optimized jpg file
+</p>
+
+![cloudinary options vectorized](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_664,w_834/v1669631863/food_puzvqi.png)
+
+```jsx
+    // Usage
+    const options = [
+        {  effect: "vectorize:colors:3:corners:40:detail:1.0" },
+    ]
+    const result = await upcloudify.uploadImage(files, options);
+```
+
+<br/>
+
+
 <h3>API</h3>
 
 Key | Type | Usage | Default

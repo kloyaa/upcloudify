@@ -1,20 +1,26 @@
 const fs = require("fs");
-const cloudinary = require("cloudinary").v2;
 const { imageTypes, videoTypes } = require("../const/mimeTypes.const");
+const cloudinary = require("cloudinary").v2;
 
 class CloudinaryUpload {
-    constructor(props) {
-        const { cloud_name, api_key, api_secret, cloud_folder = "Upcloudify", isUniqueFilename = true } = props;
+    constructor(
+        cloud_name,
+        api_key,
+        api_secret,
+        cloud_folder = "Upcloudify",
+        isUniqueFilename = true,
+        ) {
+
         this.cloud_name = cloud_name;
         this.api_key = api_key;
         this.api_secret = api_secret;
         this.cloud_folder = cloud_folder;
-
         this.cloud_options = {
             folder: this.cloud_folder,
-            unique_filename: isUniqueFilename
+            unique_filename: isUniqueFilename,
+            transformation: [],
+            tags: []
         };
-
         this.cloud_options_video = {
             folder: this.cloud_folder,
             public_id: `${Date.now()}`,
@@ -25,20 +31,24 @@ class CloudinaryUpload {
               { width: 160, height: 100, crop: "crop", gravity: "south", audio_codec: "none" }
             ],
             eager_async: true,
-        }
-
+        };
         cloudinary.config({
             cloud_name: this.cloud_name,
             api_key: this.api_key,
             api_secret: this.api_secret,
         });
+
     }
 
-    async uploadImage (files) {
+    async uploadImage (content, options = {}) {
         try {
-            if (files.length > 1) {
+            if(options) {
+               this.cloud_options.transformation.push(...options);
+               this.cloud_options.tags.push(...content.tags);
+            }
+            if (content.files.length > 1) {
                 const uploads = [];
-                for (const file of files) {
+                for (const file of content.files) {
                     if(imageTypes.includes(file.mimetype)) {
                         const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
                         uploads.push(response);
@@ -48,7 +58,7 @@ class CloudinaryUpload {
                 return uploads;
             }
             else {
-                for (const file of files) {
+                for (const file of content.files) {
                     if(imageTypes.includes(file.mimetype)) {
                         const response = await cloudinary.uploader.upload(file.path, this.cloud_options);
                         fs.unlinkSync(file.path);
@@ -57,7 +67,7 @@ class CloudinaryUpload {
                 }
             }
           } catch (error) {
-            throw error;
+            console.log(error)
         }
     }
 
