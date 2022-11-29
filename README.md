@@ -67,6 +67,20 @@ Image Type | Extension | MIME Type
         isUniqueFilename
     );
 
+    // files must be an array of File
+    const files = [
+        {
+            fieldname: 'file',
+            originalname: 'sample_image.jpg',
+            encoding: '7bit',
+            mimetype: 'image/jpeg',
+            destination: 'C:\\Users\\USERNAME\\AppData\\Local\\Temp',
+            filename: '771ec752e412cf',
+            path: 'C:\\Users\\USERNAME\\AppData\\Local\\Temp\\771ec752e412cf',
+            size: 40055
+        }
+    ]
+
     // Uploading images
     const result = await upcloudify.uploadImage(files);
 
