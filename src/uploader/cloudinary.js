@@ -102,6 +102,19 @@ class CloudinaryUpload extends Options {
     }
 
     /**
+     * Apply Gradient effect
+     *
+     * @param   (height, width, crop)
+     * @description Apply blurry effect to image
+     * @default {  height = 300,  width = 300, crop = pad  }
+     *
+    */
+    gradient() {
+        this.cloud_options.transformation.push(Options.gradient());
+        return this;
+    }
+
+    /**
      * @function add tags
      * @param   Array  ["tag_1", "tag_2", ... more]
      * @description Array<string> can contain one or more strings

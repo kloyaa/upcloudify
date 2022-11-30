@@ -17,4 +17,14 @@ module.exports = class Options {
     static cartoonify(value = 300) {
         return { effect: `cartoonify:${value}` }
     }
+
+    static gradient(height = 300, width = 300, crop = "pad") {
+        return {
+            effect: "gradient_fade:symmetric_pad", x: "0.5" ,
+            background: "auto:predominant",
+            height,
+            width,
+            crop
+        };
+    }
 }
