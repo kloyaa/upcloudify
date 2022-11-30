@@ -2,6 +2,12 @@
 
 [![NPM Version][npm-image]][npm-url]
 
+<h3>Revision history</h3>
+
+Rev. | Date | Author | Dscription
+--- | --- | --- | ---
+1.0 | Nov 30, 2022 | **Kolya Nikolai Madridano** | Added revision table and convert other options to built-in functions
+
 <h3>What is upcloudify?</h3>
 <p>upcloudify is a javascript package that allows you to easily upload files to your cloud. </p>
 ✔️ Upload your files with short block of codes <br />
@@ -101,10 +107,9 @@ Image Type | Extension | MIME Type
 
 ```jsx
     // Usage
-    const options = [
-        {   effect: "art:red_rock"   }
-    ]
-    const result = await upcloudify.uploadImage(files, options);
+    const result = await upcloudify
+        .applyFilter('red_rock')
+        .uploadImage(files);
 ```
 
 <br/>
@@ -113,10 +118,9 @@ Image Type | Extension | MIME Type
 
 ```jsx
     // Usage
-    const options = [
-        {   effect: "cartoonify"   }
-    ]
-    const result = await upcloudify.uploadImage(files, options);
+    const result = await upcloudify
+        .cartoonify()
+        .uploadImage(files);
 ```
 
 <br/>
@@ -125,11 +129,9 @@ Image Type | Extension | MIME Type
 
 ```jsx
     // Usage
-    const options = [
-        // 0 to 100
-        {   opacity: 30   }
-    ]
-    const result = await upcloudify.uploadImage(files, options);
+    const result = await upcloudify
+        .opacity(30)
+        .uploadImage(files);
 ```
 
 <br/>
@@ -138,11 +140,9 @@ Image Type | Extension | MIME Type
 
 ```jsx
     // Usage
-    const options = [
-        // 0 to 100
-        {   effect: "pixelate:20"   }
-    ]
-    const result = await upcloudify.uploadImage(files, options);
+    const result = await upcloudify
+        .pixelate(20)
+        .uploadImage(files);
 ```
 
 <br/>
@@ -151,11 +151,9 @@ Image Type | Extension | MIME Type
 
 ```jsx
     // Usage
-    const options = [
-        {   background: "auto:predominant", height: 300, width: 300, crop: "pad"   },
-        {   effect: "gradient_fade:symmetric_pad", x: "0.5"   }
-    ]
-    const result = await upcloudify.uploadImage(files, options);
+    const result = await upcloudify
+        .gradient()
+        .uploadImage(files);
 ```
 
 <br/>
