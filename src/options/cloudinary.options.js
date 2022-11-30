@@ -40,4 +40,7 @@ module.exports = class Options {
     static resize({ height = 100, width = 200 }) {
         return {  height, width }
     }
+    static applyFilter(filter = "aurora") {
+        return { effect: `art:${aurora}` }
+    }
 }
