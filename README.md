@@ -7,7 +7,7 @@ Rev. | Date | Author | Dscription
 1.0 | Nov 30, 2022 | **Kolya Nikolai Madridano** | Added revision table and convert other options to built-in functions
 
 <br/>
-<br/>
+
 
 <h3>What is upcloudify?</h3>
 <p>upcloudify is a javascript package that allows you to easily upload files to your cloud. </p>
@@ -108,15 +108,15 @@ Image Type | Extension | MIME Type
 
 Preview | Usage
 --- | ---
-![cloudinary options](https://res.cloudinary.com/diigkcc6g/image/upload/c_scale,h_300,w_400/v1669629291/filters_q8ifgc.png) | `.applyFilter('red_rock')`
+![cloudinary options](https://res.cloudinary.com/diigkcc6g/image/upload/c_scale,h_300,w_400/v1669629291/filters_q8ifgc.png) | `.applyFilter('aurora')`
 ![cloudinary options cartoonify](https://res.cloudinary.com/diigkcc6g/image/upload/c_scale,h_300,w_400/v1669629785/cartonify_vm2ti7.png) | `.cartoonify()`
 ![cloudinary options opacity](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,h_300,w_400/v1669629966/opacity_idcqhm.png) |  `.opacity(30)`
 ![cloudinary options pixelate](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,h_300,w_400/v1669630132/pixelate_wbdda7.png) | `.pixelate(20)`
 ![cloudinary options gradient](https://res.cloudinary.com/diigkcc6g/image/upload/c_crop,g_auto,h_300,w_400/v1669630281/gradient_fade_leljbr.png) | `.gradient()`
 ![cloudinary options border](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669630445/border_ejv3dj.png) | `.border({ size, color })`
 ![cloudinary options replace color](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669630924/replace_color_vvapmx.png) | `.replaceColor({ original, tolerance, newcolor })`
-![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631205/rouding_value_tfaxbt.png) | `.borderRadius({ height, width, crop, radius })`
-![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631445/avatar_ttpj7l.png) | ` .vectorize({ height , width, crop = "thumb", radius = "max" })`
+![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631205/rouding_value_tfaxbt.png) | `.borderRadius({ crop, radius })`
+![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631445/avatar_ttpj7l.png) | ` .vectorize({ crop, radius = "max" })`
 
 
 <br/>
@@ -135,8 +135,14 @@ Preview | Usage
 
 Key | Type | Usage | Default
 --- | --- | --- | ---
-*files* | *File[]* | *files you want to upload to the cloud* | `undefined`
+*files* | *File []* | *files you want to upload to the cloud* | `undefined`
 *isUniqueFilename* | *boolean* | *The uploaded file will have a unique name if set to true.* | `true`
+*crop* | *string* | fill, pad | `fill`
+*radius* | *number or string* | 1 to 100, "max" | `default`
+*height* | *number* | No information given | `default`
+*width* | *number* | No information given | `default`
+
+
 
 <br/>
 

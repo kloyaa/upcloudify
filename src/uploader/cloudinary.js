@@ -34,6 +34,17 @@ class CloudinaryUpload extends Options {
             api_secret: this.api_secret,
         });
     }
+    /**
+     * Apply Artistic filters
+     *
+     * @param   filter
+     * @description Apply an artistic filter using the art effect, specifying one of the filters shown.
+     * @default aurora
+    */
+     applyFilter(filter) {
+        this.cloud_options.transformation.push(Options.applyFilter(filter));
+        return this;
+    }
 
     /**
      * Apply Cartoonify effect
