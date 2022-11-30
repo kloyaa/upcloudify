@@ -17,14 +17,27 @@ module.exports = class Options {
     static cartoonify(value = 300) {
         return { effect: `cartoonify:${value}` }
     }
-
-    static gradient(height = 300, width = 300, crop = "pad") {
+    static gradient(crop = "pad") {
         return {
-            effect: "gradient_fade:symmetric_pad", x: "0.5" ,
+            effect: "gradient_fade:symmetric_pad",
+            x: "0.5" ,
             background: "auto:predominant",
-            height,
-            width,
             crop
         };
+    }
+    static border({size = 5, color = "red"}) {
+        return { border: `${size}px_solid_${color}`  }
+    }
+    static replaceColor({ original, tolerance = 80, newcolor = "red" }) {
+        return { effect: `replace_color:${newcolor}:${tolerance}:${original}` }
+    }
+    static borderRadius({ crop = "fill", radius = 25 }) {
+        return  {  crop, radius: `${radius}:0`  }
+    }
+    static vectorize({ corners = 40 }) {
+        return {  effect: `vectorize:colors:3:corners:${corners}:detail:1.0` }
+    }
+    static resize({ height = 100, width = 200 }) {
+        return {  height, width }
     }
 }

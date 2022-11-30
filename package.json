@@ -25,5 +25,8 @@
   "homepage": "https://github.com/kloyaa/upcloudify",
   "devDependencies": {
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "cloudinary": "^1.32.0"
   }
 }
