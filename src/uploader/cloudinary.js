@@ -3,8 +3,11 @@ const cloudinary = require("cloudinary").v2;
 const { imageTypes, videoTypes } = require("../const/mimeTypes.const");
 const Options = require("../options/cloudinary.options");
 
+
+
 class CloudinaryUpload extends Options {
-    constructor(cloud_name, api_key, api_secret) {
+    constructor({cloud_name, api_key, api_secret}) {
+        super();
         this.cloud_name = cloud_name;
         this.api_key = api_key;
         this.api_secret = api_secret;
@@ -104,13 +107,78 @@ class CloudinaryUpload extends Options {
     /**
      * Apply Gradient effect
      *
-     * @param   (height, width, crop)
+     * @param   (crop)
      * @description Apply blurry effect to image
-     * @default {  height = 300,  width = 300, crop = pad  }
+     * @default { crop = pad  }
      *
     */
     gradient() {
         this.cloud_options.transformation.push(Options.gradient());
+        return this;
+    }
+
+    /**
+     * Add border
+     *
+     * @param   ({size, color})
+     * @description Add border to image
+     * @default {  size = 5, color = red  }
+     *
+    */
+    border({ size, color }) {
+        this.cloud_options.transformation.push(Options.border({ color, size }));
+        return this;
+    }
+
+    /**
+     * Apply Vectorize effect
+     *
+     * @param   ({ corners })
+     * @description  Vectorizing is a great way to capture the main shapes and objects composing a photo or drawing and also produces a nice effect. When using the vectorize effect for an artistic transformation, you can deliver the vectorized images in any format, simply by specifying the relevant extension.
+     * @default { corners = 40 }
+     *
+    */
+    vectorize({ corners }) {
+        this.cloud_options.transformation.push(Options.vectorize({ corners }));
+        return this;
+    }
+
+    /**
+     * Replace color
+     *
+     * @param   ({ original, tolerance, newcolor })
+     * @description Specifying blue as the color to replace (to a tolerance of 80 from the color #2b38aa) replaces the blue sides with parallel shades of maroon, taking into account shadows, lighting, etc:
+     * @default { tolerance = 80, newcolor = red }
+     *
+    */
+    replaceColor({ original, tolerance, newcolor }) {
+        this.cloud_options.transformation.push(Options.replaceColor({ original, tolerance, newcolor }));
+        return this;
+    }
+
+    /**
+     * Border radius
+     *
+     * @param   ({ crop, radius })
+     * @description Rather than specifying specific rounding values, you can automatically crop images to the shape of an ellipse (if the requested image size is a rectangle) or a circle (if the requested image size is a square). Simply pass max as the value of the radius parameter instead of numeric values.
+     * @default { height = 100, width = 100, crop = "fill", radius = 25 }
+     *
+    */
+    borderRadius({ crop, radius }) {
+        this.cloud_options.transformation.push(Options.borderRadius({ crop, radius }));
+        return this;
+    }
+
+    /**
+     * Resize Image
+     *
+     * @param   ({ height, width })
+     * @description You can set the target dimensions of your resized image by specifying width, height, and/or the target aspect ratio as qualifiers of your resize transformation.
+     * @default { height = 100, width = 200 }
+     *
+    */
+    resize({ height, width }) {
+        this.cloud_options.transformation.push(Options.resize({ height, width }));
         return this;
     }
 
@@ -171,6 +239,7 @@ class CloudinaryUpload extends Options {
                     }
                 }
             }
+            return;
           } catch (error) {
             console.log(error)
         }
