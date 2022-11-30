@@ -27,4 +27,25 @@ module.exports = class Options {
             crop
         };
     }
+<<<<<<< Updated upstream
+=======
+    static border({size = 5, color = "red"}) {
+        return { border: `${size}px_solid_${color}`  }
+    }
+    static replaceColor({ original, tolerance = 80, newcolor = "red" }) {
+        return { effect: `replace_color:${newcolor}:${tolerance}:${original}` }
+    }
+    static borderRadius({ crop = "fill", radius = 25 }) {
+        return  {  crop, radius: `${radius}:0`  }
+    }
+    static vectorize({ corners = 40 }) {
+        return {  effect: `vectorize:colors:3:corners:${corners}:detail:1.0` }
+    }
+    static resize({ height = 100, width = 200 }) {
+        return {  height, width }
+    }
+    static applyFilter(filter = "aurora") {
+        return { effect: `art:${aurora}` }
+    }
+>>>>>>> Stashed changes
 }
