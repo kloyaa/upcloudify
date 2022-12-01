@@ -116,7 +116,7 @@ Preview | Usage
 ![cloudinary options border](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669630445/border_ejv3dj.png) | `.border({ size, color })`
 ![cloudinary options replace color](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669630924/replace_color_vvapmx.png) | `.replaceColor({ original, tolerance, newcolor })`
 ![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631205/rouding_value_tfaxbt.png) | `.borderRadius({ crop, radius })`
-![cloudinary options round](https://res.cloudinary.com/diigkcc6g/image/upload/c_fit,h_300,w_400/v1669631445/avatar_ttpj7l.png) | ` .vectorize({ crop, radius = "max" })`
+![cloudinary options round](https://res.cloudinary.com/demo/image/upload/q_auto,h_300,w_400,e_vectorize/docs/fruit-stand.jpg) | ` .vectorize({ crop, radius = "max" })`
 
 
 <br/>
